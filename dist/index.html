@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="script.js" defer></script>
-    <title>Document</title>
+    <title>Sign Up Form</title>
   </head>
   <body>
     <div class="hero"></div>
@@ -19,17 +19,44 @@
         <p>You <span class="italize">know</span> you want to.</p>
       </header>
       <section>
-        <!-- figure out whether or not to use form. -->
         <form action="">
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
+          <!-- Not sure what to put in "action" -->
+          <fieldset class="input-name">
+            <label for="first-name">First Name</label>
+            <input name="first-name" id="first-name" type="text" required />
+
+            <label for="last-name">Second Name</label>
+            <input name="last-name" id="last-name" type="text" required />
+          </fieldset>
+          <fieldset class="input-contact-info">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+
+            <label for="phone-number">Phone Number</label>
+            <input
+              type="number"
+              name="phone-number"
+              id="phone-number"
+              required
+            />
+          </fieldset>
+
+          <fieldset class="input-password">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required />
+
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+              required
+            />
+          </fieldset>
+
+          <button type="submit">Submit</button>
+          <p>Already have an account? <span>Log in</span></p>
         </form>
-        <input type="submit" />
-        <p>Already have an account? <span>Log in</span></p>
       </section>
     </main>
   </body>
