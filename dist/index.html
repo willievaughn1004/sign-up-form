@@ -8,30 +8,38 @@
     <title>Sign Up Form</title>
   </head>
   <body>
-    <div class="hero"></div>
-    <main>
-      <header>
-        <p>
-          This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams. Sign up
-          <span class="italize">now</span> to get started.
-        </p>
-        <p>You <span class="italize">know</span> you want to.</p>
-      </header>
-      <section>
-        <form action="">
-          <!-- Not sure what to put in "action" -->
-          <fieldset class="input-name">
+    <!-- <div class="hero"></div> -->
+    <header>
+      <h1>
+        This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams. Sign up
+        <span class="italize">now</span> to get started.
+      </h1>
+      <h1>You <span class="italize">know</span> you want to.</h1>
+    </header>
+    <form action="">
+      <!-- Not sure what to put in "action" -->
+      <div class="inputs">
+        <h1>Let's do this!</h1>
+        <div>
+          <fieldset>
             <label for="first-name">First Name</label>
             <input name="first-name" id="first-name" type="text" required />
+          </fieldset>
 
-            <label for="last-name">Second Name</label>
+          <fieldset>
+            <label for="last-name">Last Name</label>
             <input name="last-name" id="last-name" type="text" required />
           </fieldset>
-          <fieldset class="input-contact-info">
+        </div>
+
+        <div>
+          <fieldset>
             <label for="email">Email</label>
             <input type="email" name="email" id="email" required />
+          </fieldset>
 
+          <fieldset>
             <label for="phone-number">Phone Number</label>
             <input
               type="number"
@@ -40,11 +48,15 @@
               required
             />
           </fieldset>
+        </div>
 
-          <fieldset class="input-password">
+        <div>
+          <fieldset>
             <label for="password">Password</label>
             <input type="password" name="password" id="password" required />
+          </fieldset>
 
+          <fieldset>
             <label for="confirm-password">Confirm Password</label>
             <input
               type="password"
@@ -53,13 +65,15 @@
               required
             />
           </fieldset>
+        </div>
+      </div>
 
-          <button type="submit">Submit</button>
-          <p>Already have an account? <span>Log in</span></p>
-        </form>
-      </section>
-    </main>
+      <div class="submit">
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <span>Log in</span></p>
+      </div>
+    </form>
   </body>
 </html>
 
-<!-- Make sure to do valdiation of the html -->
+<!-- Make sure to do validation of the html -->
