@@ -169,7 +169,7 @@ form .inputs {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
   background-color: white;
   padding: 2rem 0 2rem 3rem;
   box-shadow: 0px 2px 5px rgb(209, 209, 209);
@@ -193,7 +193,7 @@ form .inputs fieldset {
 form .inputs input {
   width: 15rem;
   height: 1.5rem;
-  border: 1.5px solid #E5E7EB;
+  border: 1.5px solid #e5e7eb;
   border-radius: 5px;
   padding: 5px;
   outline: none;
@@ -208,10 +208,17 @@ form .submit button {
   padding: 0.8rem 2.5rem;
   margin: 2rem 0;
   cursor: pointer;
-  background-color: #596D48;
+  background-color: #596d48;
+  box-shadow: 1px 3px 5px rgb(209, 209, 209);
+  color: white;
+  font-weight: 700;
 }
-form .submit button:hover {
-  background-color: yellow;
+form .submit p {
+  font-weight: 700;
+}
+form .submit span {
+  cursor: pointer;
+  color: #596d48;
 }
 form .submit button,
 form .submit p {
