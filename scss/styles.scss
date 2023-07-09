@@ -9,12 +9,61 @@ $fw-bold: 700;
 
 body {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 100svh;
+  overflow: hidden;
 
   background-color: $header-background;
-  height: 100svh;
   font-family: Arial, Helvetica, sans-serif;
+
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+  }
+}
+
+.hero {
+  width: 100%;
+  background-image: url("../img/background-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (max-width: 1000px) {
+    height: 40vh
+  }
+
+  div {
+    position: relative;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    img {
+      width: 5rem;
+    }
+
+    h1 {
+      font-size: 5rem;
+      color: white;
+    }
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 150%;
+
+  @media (max-width: 1000px) {
+    width: 100%
+  }
 }
 
 header {
@@ -25,9 +74,8 @@ header {
 
   font-size: 1.25rem;
   font-weight: $fw-bold;
-  min-height: 50%;
   max-width: 40rem;
-  margin-bottom: 2.5rem;
+  margin: 2.5rem 0;
 
   * {
     margin-left: 3rem;
@@ -39,7 +87,6 @@ header {
 }
 
 form {
-  min-height: 80%;
 
   .inputs {
     display: flex;
@@ -91,11 +138,13 @@ form {
   }
 
   .submit {
+    margin: 2.5rem 0;
+
     button {
       border: none;
       border-radius: 5px;
       padding: 0.8rem 2.5rem;
-      margin: 2rem 0;
+      margin: 0rem 0 2rem 0;
       cursor: pointer;
       background-color: $c-button;
       box-shadow: 1px 3px 5px rgb(209, 209, 209);
